@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.navigation-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+   position: fixed;
+    background-color: #E1AB01;
+    padding: 0 15px;
+    z-index: 999;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 2000px;
+    width: 100%;
+    height: 100%;
+}
+.left{
+   height: 92%;
+   width: 90px;
+   margin-left: 30px;
+   background-color: rebeccapurple;
+   background-image: url(juice-logo.jpg);
+   background-size: cover;
+   background-position: center;
+}
+#search{
+    outline: none;
+    border: none;
+    height: 26px;
+    width: 220px;
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+.right{
+    font-size: 18px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    color: #55234D;
+    
+}
+.right a{
+    color: #55234D;
+    text-decoration: none;
+}
+.right a:hover,.right div:hover{
+    color: whitesmoke;
+}
+.menu{ display: none;
+   margin-right: 20px;
+    height: 100%;
+    width: 25px;
+    cursor: pointer;
+}
+.menu img{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+.content{
+      
+        max-width: 1900px;
+        width: 100%;
+}
+#Home{
+     height: 420px;
+     width: 100%;
+     padding: 0 30px;
+     display: flex;
+      padding-top: 15px;
+    
+}
+#welcome{
+    font-size: 30px;
+
+    font-weight: bold;
+    padding-left: 24px;
+}
+#home-left{
+    height: 85%;
+    width: 60%;
+   
+    overflow: hidden;
+}
+#home-left h4{
+    padding-left: 27px;
+    margin-top: 10px;
+  
+}
+#matter,#visit{
+    font-size: 18px;
+    margin-top: 17px;
+    padding-left:20px;
+   
+}
+#visit{
+    padding-left: 12px;
+}
+#home-right{
+    width: 40%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  
+}
+.swiper{
+    width: 97%;
+    height: 100%;
+   
+    background-position: center;
+    background-size: cover;
+}
+.swiper img{
+    height: 100%;
+    width: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+}
+
+#About-us{
+    margin-top: 20px;
+    height: 400px;
+    /* background-color: red; */
+    padding:0 30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#About-left{
+    height: 90%;
+    width: 48%;
+    background-color: burlywood;
+    background-image: url(about-us.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#About-right{
+    height: 90%;
+    width: 52%;
+    overflow: hidden;
+    padding-left: 15px;
+}
+#heading2{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+   
+    padding: 0 30px;
+  
+}
+#About-right h1{
+   font-size: 45px;
+   
+}
+#about-content{
+    text-align: right;
+     font-size: 18px;
+    margin-top: 20px;
+}
+
+#list{
+    margin-top: 10px;
+   
+    
+  text-align: right;
+  padding-right: 20px;
+  list-style-type: none;
+}
+#About-right h4{ 
+      margin-top: 40px;
+      font-weight: lighter;
+   
+ }
+ .our-juices{
+     height: 350px;
+  
+     display: flex;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+ }
+ .juices{
+     position: relative;
+     width: 97%;
+     height: 95%;
+     display: flex;
+     flex-direction: column;
+    
+     overflow: hidden;
+    
+ }
+ #scroll-left{
+    border: none;
+    position: absolute;
+    top:107px;
+    left:0;
+    box-sizing: border-box;
+    height:100px;
+    outline: none;
+    width: 50px;
+    background-color:white;
+    box-shadow: 0px 0px 5px 2px gray;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 0px 7px 7px 0px;
+    z-index: 100;
+    visibility: hidden;
+ }
+ #scroll-left span{
+    padding-top:4px ;
+    padding-left: 10px;
+    
+ }
+ #scroll-right{
+    border: none;
+    position: absolute;
+    top:107px;
+    right: 0;
+    box-sizing: border-box;
+    height:100px;
+    outline: none;
+    width: 50px;
+    background-color:white;
+    box-shadow: 0px  0px 5px 2px  gray;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 7px 0px 0px 7px;
+}
+#scroll-right span{
+    transform: rotate(180deg);
+    padding-left: 10px;
+}
+.heading{
+    height: 15%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 13px;
+    padding-left: 10px;
+    width: 100%;
+    
+ }
+ .juice-items{
+    padding: 0 10px;
+    padding-top: 13px;
+    height: 95%;
+    width: 97vw;
+    display: flex;
+    overflow-x:scroll; 
+    scroll-behavior: smooth;
+    /* scrollbar-width:thin; */
+    gap :13px;   
+ }
+
+ .juice-items>div{
+    /* overflow: hidden; */
+    height: 100%;
+    min-width: 210px;
+    /* background-color: cornflowerblue; */
+    
+    cursor: pointer;
+ }
+ .juice-images{
+    position: relative;
+    cursor: pointer;
+ }
+ .juice-images:hover .back{
+    transform:perspective(1000px) rotateY(0deg);
+ }
+ .juice-images:hover .front{
+    transform: perspective(1000px)rotateY(180deg);
+ }
+ .juice-items::-webkit-scrollbar{
+    width: 0;
+}
+.front{
+   height: 100%;
+   width: 100%;
+   backface-visibility: hidden;
+   transform: perspective(1000px)rotateY(0);
+   transition: 0.6s;
+}
+.front img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.back{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1000px)rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 0.6s;
+    border: 1.5px #e1ad018a solid ;
+    border-radius: 11.5px;    
+}
+.name{
+    font-size: 20px;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    padding-top:5px ;
+    background-color:#e1ad018a;
+    border-radius: 10px 10px 0 0;
+}
+.benifits{
+    width: 100%;
+    height: 80%;
+    margin-top: 4px;
+   
+}
+#heading1{
+    font-size: 19px;
+    width: 100%;
+    height: 13%;
+    padding-top: 4px;
+    padding-left: 6px;
+  
+    
+}
+.points{
+    list-style-type:circle;
+}
+.points li{
+    margin-top: 9px;
+    margin-left: 18px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+#footer{
+    height: 270px;
+    width: 100%;
+    background-color: brown;
+}
+#top{
+    height: 17%;
+    background-color:#dfb838;
+    cursor: pointer;
+}
+#connect{
+    width: 230px;
+    height: 95%;
+    margin-left: 30px;
+    /* padding-left: 70px; */
+    padding-top: 25px;
+    text-align: center;
+}
+#boxes{
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+#box-top>div{
+    height: 40%;
+    width: 180px;
+    box-shadow: 0 0 5px rgba(154, 153, 153, 0.863);
+    outline: none;
+    border: none;
+}
+#box-top{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.6rem;
+  
+}
+#box-bottom{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(97, 152, 152);
+}
+#top:hover{
+    background-color: #dfb838;
+}
+#middle{
+    height: 73%;
+    background: linear-gradient(to top, #E1AB01, #FFFFFF), linear-gradient(to bottom, #E1AB01, #FFFFFF);
+    background-blend-mode: screen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#copy-right{
+    height: 10%;
+    background-color: #e2bf49;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 6px;
+}
+.image{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact{
+    height: 50%;
+    background: #e2be4945;
+     padding-top: 5px;
+    text-align: center;
+    font-size: 19px;
+
+}
+@media (max-width:1040px) {
+    #home-right{
+           display: none;
+    }
+    #home-left{
+        width: 100%;
+        height: 100%;
+       
+    }
+    #About-right{
+        width: 100%;
+        height: 100%;
+        
+       
+    }
+    #About-right div{
+        text-align: left;
+    }
+    #heading2{
+       justify-content: flex-start;
+    }
+    #list li{
+        text-align: left;
+    }
+    #About-left{
+        display: none;
+    }
+    #About-us{
+        margin-top: 0px;
+    }
+}
+@media (max-width:600px) {
+    .right{
+        display: none;
+            position: absolute;
+            background-color: #e1ad01;
+            top:45px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            gap: .2rem;
+            margin: 0;
+    }
+    .right div,a{
+         width: 100%;
+         text-align: center;
+         padding: 10px;
+         border: 1px solid #e6ce835e;
+         border-radius: 8px;
+    }
+    .heading{
+        content: "Our Juicesnnnnnnn";
+    }
+    .menu{
+        display: block;
+        margin-right: 20px;
+    }
+    .menu img{
+        display: block;
+        margin-right: 30px;
+    }
+    .navigation-bar{
+        width: 100%;
+        height: 45px;
+        padding: 0 10px;
+    }
+    .left{
+        width: 70px;
+        margin-left: 10px;
+    }
+    #About-left{
+        display: none;
+    }
+
+   #box-top div{
+    height: 40%;
+   
+   }
+   .right.active{
+       display: flex;
+    }
+   #box-top{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem;
+   }
+}
+
+@media (max-width:890px) {
+   #search{
+       display: none;
+   }
+   #connect{
+       display: none;
+   }
+}

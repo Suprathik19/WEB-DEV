@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #spinner{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: cornsilk;
+            background: conic-gradient(orange 0deg,white 0deg);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #spinner::before{
+            content:"";
+           
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+            background-color:white;
+            border-radius: 50%; 
+        }
+        .percent{
+            z-index: 90;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="spinner">
+            
+              <div class="percent">60</div>
+        </div>
+    </div>
+</body>
+<script>
+    s=document.getElementById("spinner");
+    s.style.background = `conic-gradient(orange 360deg,white 0deg)`;
+    let i=360;
+    let f = setInterval(()=>{
+        i-=6;
+        console.log(i);
+        if(i<0){
+            i=0;
+            clearInterval(f);
+        }
+        s.style.background = `conic-gradient(orange ${i}deg,white 0deg)`;
+        document.querySelector(".percent").innerText = `${Math.floor(i/6)}`;
+      
+    },1000);
+</script>
+</html>

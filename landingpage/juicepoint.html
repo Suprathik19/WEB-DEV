@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice-point</title>
+    <link rel="stylesheet" href="juicepoint.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="icon" href="juice-logo.jpg" style="border-radius: 24px;">
+     <style>
+        .swiper-pagination-bullet{
+               background-color: white;
+               height: 4px;
+               width: 4px;
+         }
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="navigation-bar" id="navbar">
+             <div class="nav-item">
+
+                 <div class="left">
+                     
+                 </div>
+                 <div class="right">
+                      <input id="search" type="text" placeholder="Search here...">
+                      
+                      <a href="#Home">Home</a>
+                      <div id="orderjuice" style="cursor: pointer;">Orderjuice</div>
+                      <a  href="#About-us">About us</a>
+                      <a  href="#middle">Contact us</a>
+                 </div>
+                 <div class="menu">
+                     <img src="menu.png" alt="" srcset="">
+                 </div>
+             </div>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <section id="Home">
+                 <div id="home-left">
+                     <div id="welcome">
+                        Welcome to  Juice Point! 🍹
+                     </div>
+                     <h4>Pure, Fresh, and Naturally Delicious!</h3>
+                     <div id="matter">
+                        🌿 100% Fresh Ingredients | 🍊 No Artificial Preservatives | 🍍 Made with Love<br><br>
+                         Quench your thirst with our refreshing range of fruit juices, smoothies, and detox drinks. Whether you’re looking for a morning energy boost or a cool, revitalizing drink, we’ve got you covered!
+                     </div>
+                     <div id="visit">
+                        📍 Visit us today and experience the taste of nature!
+                     </div>
+                 </div>
+                 <div id="home-right">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="f1.jpg" alt="" srcset=""></div>
+                          <div class="swiper-slide"><img src="f2.jpg" alt="" srcset=""></div>
+                          <div class="swiper-slide"><img src="f3.jpg" alt="" srcset=""></div>
+                          <div class="swiper-slide"><img src="f4.jpg" alt="" srcset=""></div>
+                        </div>
+                       <div class="swiper-pagination"></div>
+                      </div>
+                 </div>
+            </section>
+            <div id="About-us">
+                <div id="About-left">
+                    
+                </div>
+                <div id="About-right">
+                    <div id="heading2">
+                        <h1>About us</h1>
+                    </div>
+                    <div id="about-content">
+                        At Juice point, we blend freshness, health, and taste into every sip! Our juices are made from 100% fresh, hand-picked fruits, with zero preservatives or artificial flavors just pure, natural goodness.<br>
+                        <ul id="list">
+                            <li>✅ Farm-to-Glass Freshness   🌱</li>
+                            <li>✅ No Additives ,  Just Nature 🍍</li>
+                            <li>✅ Crafted for Health & Taste 🍓</li>
+                        </ul>
+                        <h4>Drink Fresh. Stay Healthy. Feel Awesome! 💚</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="our-juices">
+                <div class="juices">
+                    <button id="scroll-left" onclick="scrollleft()"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                    <div class="heading">Our Healthy & Special Juices...<a href="" style="color: #E1AB01; font-size: 14px; font-weight:lighter; margin-left: 9px; text-decoration: none;">Explore All juices..</a></div>
+                    <div class="juice-items" id="tobescrolled">
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="applejuice.jpg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">APPLE JUICE</div>
+                                <div class="benifits">
+                                      <div id="heading1">BENIFITS:</div>
+                                      <ul class="points">
+                                        <li>Boosts immunity</li>
+                                        <li> Keeps you hydrated</li>
+                                        <li> Supports heart health</li>
+                                        <li>Aids digestion</li>
+                                        <li>Improves memory</li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="strawberryjuice.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">STRAWBERRY JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Rich in Vitamin C</li>
+                                      <li>Boosts brain function</li>
+                                      <li>Reduces inflammation</li>
+                                      <li>High in antioxidants</li>
+                                      <li>Improves skin glow</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="kiwijuice.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">KIWI JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Boosts energy levels</li>
+                                      <li>Promotes better sleep</li>
+                                      <li>Strengthens bones</li>
+                                      <li>Boosts energy levels</li>
+                                      <li>Enhances iron absorption</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="avacadojuice.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">AVACADO JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Supports muscle recovery</li>
+                                      <li>Keeps you full longer</li>
+                                      <li>Rich in healthy fats</li>
+                                      <li>Regulates blood sugar</li>
+                                      <li>Good for eye health</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="banana.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">BANANA JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Helps in weight gain</li>
+                                      <li>Supports brain function</li>
+                                      <li>Enhances mood</li>
+                                      <li>Strengthens the immune system</li>
+                                      <li>Reduces bloating</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="orange.jpeg" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">ORANGE JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Detoxifies naturally</li>
+                                      <li>Refreshes and energizes</li>
+                                      <li>Boosts collagen production</li>
+                                      <li>Supports lung health</li>
+                                      <li>Reduces stress and anxiety</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="pineapple.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">PINEAPPLE JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Promotes wound healing</li>
+                                      <li>Boosts metabolism</li>
+                                      <li>Relieves muscle soreness</li>
+                                      <li>Regulates blood pressure</li>
+                                      <li>Keeps skin youthful</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images">
+                            <div class="front">
+                                <img src="grape.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">GRAPE JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Keeps the liver healthy</li>
+                                      <li>Helps regulate blood sugar</li>
+                                      <li>Promotes healthy digestion</li>
+                                      <li>Regulates blood pressure</li>
+                                      <li>Provides natural energy</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="juice-images" style="margin-right: 9px;">
+                            <div class="front">
+                                <img src="watermelon.jpeg" alt="" srcset="" height="100%" width="100%">
+                            </div>
+                            <div class="back">
+                                <div class="name">WATERMELON JUICE</div>
+                                <div class="benifits">
+                                    <div id="heading1">BENIFITS:</div>
+                                    <ul class="points">
+                                      <li>Regulates body temperature</li>
+                                      <li>Relieves muscle cramps</li>
+                                      <li>Boosts muscle recovery</li>
+                                      <li>Helps in weight loss</li>
+                                      <li>Refreshes and cools the body</li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <button id="scroll-right" onclick="scrollright()"><span class="material-symbols-outlined">arrow_back_ios</span></button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="top" style="text-align: center; padding-top: 14px;"><a href="#Home" style="text-decoration:none ; color: black; font-size: 18px; font-weight: 550;">BACK TO TOP</a></div>
+            <div id="middle">
+                <div id="connect" >
+                     <h1 style="font-size: 39px;">Connect</h2>
+                     <h3 style="padding-right: 60px; font-size: 22px;">With Us</h3>
+                     <img src="right-arrow.png" alt="" height="70px" width="70px" style="margin-right: 89px;">
+                </div>
+                <div id="boxes">
+                  <div id="box-top">
+                    <div id="location">
+                        <div class="image">
+                            <img src="location.png" alt="" height="90%">
+                        </div>
+                        <div class="contact"></div>
+                    </div>
+                    <div id="contact">
+                        <div class="image">
+                            <img src="call.png" alt="" height="90%">
+                        </div>
+                        <div class="contact">
+                             <h5 style="  font-weight: lighter;">7864526892</h5>
+
+                        </div>
+                    </div>
+                    <div id="mail">
+                        <div class="image"> <img src="mail.png" alt="" height="90%"></div>
+                        <div class="contact" style="font-size: 14px;">juicepoint18@gmail.com</div>
+                    </div>
+                  </div>
+                 
+                </div>
+                
+            </div>
+            <div id="copy-right">
+                <span>&copy Juice point | All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay:3000,
+        disableOnInteraction:false,
+    },  
+    loop: true,
+    pagination: {
+     el: '.swiper-pagination',
+     clickable:true,
+   },
+   navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    });
+    function scrollright(){
+           document.getElementById("tobescrolled").scrollBy({left:600,scrollBehavior:"smooth"})
+           document.getElementById("scroll-right").style.border="2.3px solid #E1AB01"
+           document.getElementById("scroll-left").style.visibility="visible"
+           setTimeout(function(){
+               document.getElementById("scroll-right").style.border="none"
+           },250)     
+    }
+    function scrollleft(){
+      document.getElementById("tobescrolled").scrollBy({left:-600,scrollBehavior:"smooth"})
+      document.getElementById("scroll-left").style.border="2.3px solid #E1AB01"
+      setTimeout(function(){
+          document.getElementById("scroll-left").style.border="none"
+      },250)
+      }
+
+      let menu=document.querySelector(".menu")
+      let navlinks=document.querySelector(".right")
+      menu.onclick=toggle
+      function toggle(){
+          navlinks.classList.toggle('active')
+      }
+</script>
+</html>
